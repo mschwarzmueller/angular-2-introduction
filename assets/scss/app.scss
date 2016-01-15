@@ -5,7 +5,19 @@ body {
   font-size: 16px;
 }
 
-.main {
+.main,
+header {
   width: 75%;
   margin: 32px auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #233dcb;
+  font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:active {
+  color: #41abf2;
 }
