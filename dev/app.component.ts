@@ -4,7 +4,9 @@ import {ContactListComponent} from "./contacts/contact-list.component";
 @Component({
     selector: 'app',
     template: `
-        <contact-list></contact-list>
+        <div class="main">
+            <contact-list></contact-list>
+        </div>
     `,
     directives: [ContactListComponent]
 })

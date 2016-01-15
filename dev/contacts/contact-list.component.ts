@@ -19,7 +19,7 @@ import {OnInit} from "angular2/core";
     `,
     directives: [ContactComponent],
     providers: [ContactService],
-    styleUrls: ["../src/css/app.css"]
+    styleUrls: ["../src/css/contact-list.css"]
 })
 export class ContactListComponent implements OnInit {
     public contacts: Contact[];
