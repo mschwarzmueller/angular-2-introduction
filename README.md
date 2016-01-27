@@ -1,23 +1,8 @@
-# Angular 2 Beta Boilerplate
+# Angular 2 Introduction
+# Description
+This repository contains all the source code of my YouTube Angular 2 Course: https://www.youtube.com/playlist?list=PL55RiY5tL51olfU2IEqr455EYLkrhmh3n
 
-## Description
-This repository acts as a very simple Angular 2 Beta Boilerplate with which you can get started developing Angular 2 immediately.
-It is derived from the official Angular 2 Documentation which can be found [here](https://angular.io/docs/ts/latest/quickstart.html).
-## Usage
-Follow the following steps and you're good to go! Important: Typescript and npm has to be installed on your machine!
-1: Clone repo
-```
-git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
-```
-2: Install packages
-```
-npm install
-```
-3: Start server (includes auto refreshing)
-```
-npm start
-```
-4: Start Gulp Watcher (compile TypeScript and (S)CSS)
-```
-gulp
-```
+Currently only the most recent version of the code is available on GitHub. I'll try to add subfolders for individual lectures in the future.
+
+## Get started
+To get started, be sure to download my Angular 2 boilerplate: https://github.com/mschwarzmueller/angular-2-beta-boilerplate
