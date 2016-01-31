@@ -12,7 +12,7 @@ import {OnInit} from "angular2/core";
             (click)="onSelect(contact)"
             [class.clicked]="selectedContact === contact"
         >
-        {{contact.firstName}} {{contact.lastName}}
+        {{contact.firstName}} {{contact.lastName | uppercase}}
         </li>
     </ul>
     <contact *ngIf="selectedContact !== null" [contact]="selectedContact"></contact>
