@@ -1,30 +1,6 @@
 body {
-  padding: 0;
-  margin: 0;
+  padding: 32px;
+  margin: 32px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-}
-
-.main,
-header {
-  width: 75%;
-  margin: 32px auto;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #233dcb;
-  font-weight: bold;
-}
-
-header nav a:hover,
-header nav a:active {
-  color: #41abf2;
-}
-
-.pipes {
-  margin: 32px 0;
-  padding: 16px;
-  background-color: #eee;
-  border: 1px solid #ccc;
 }

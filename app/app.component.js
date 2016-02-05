@@ -1,1 +1,40 @@
-System.register(["angular2/core","./contacts/contact-list.component","angular2/router","./contacts/new-contact.component","./http-test.component"],function(t){var n,e,o,a,c,i,r,u=this&&this.__decorate||function(t,n,e,o){var a,c=arguments.length,i=3>c?n:null===o?o=Object.getOwnPropertyDescriptor(n,e):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(t,n,e,o);else for(var r=t.length-1;r>=0;r--)(a=t[r])&&(i=(3>c?a(i):c>3?a(n,e,i):a(n,e))||i);return c>3&&i&&Object.defineProperty(n,e,i),i},s=this&&this.__metadata||function(t,n){return"object"==typeof Reflect&&"function"==typeof Reflect.metadata?Reflect.metadata(t,n):void 0};return{setters:[function(t){n=t},function(t){e=t},function(t){o=t,c=t},function(t){a=t},function(t){i=t}],execute:function(){r=function(){function t(){this.date=new Date,this.randomData=new Promise(function(t,n){setTimeout(function(){return t("Random data!")},1e3)})}return t=u([n.Component({selector:"app",template:"\n        <header>\n            <nav>\n                <a [routerLink]=\"['Contacts']\">Contacts</a>\n                <a [routerLink]=\"['NewContact']\">New Contact</a>\n            </nav>\n        </header>\n        <div class=\"main\">\n            <router-outlet></router-outlet>\n            <http-test></http-test>\n            <div class=\"pipes\">\n                <h2>Date Pipe</h2>\n                <div>\n                    {{date | date:'fullDate'}}\n                </div>\n                <h2>Number Pipe</h2>\n                <div>\n                    {{ 4.566 | number:'1.4-4'}}\n                </div>\n                <h2>Currency Pipe</h2>\n                <div>\n                    {{ 15.99 | currency:'USD':true:'1.4-4' }}\n                </div>\n                <h2>Stateful Pipe</h2>\n                <div>\n                    {{randomData | async}}\n                </div>\n            </div>\n        </div>\n    ",directives:[e.ContactListComponent,i.HTTPTestComponent,c.ROUTER_DIRECTIVES]}),o.RouteConfig([{path:"/contacts",name:"Contacts",component:e.ContactListComponent,useAsDefault:!0},{path:"/newcontact",name:"NewContact",component:a.NewContactComponent}]),s("design:paramtypes",[])],t)}(),t("AppComponent",r)}}});
+System.register(['angular2/core', "./new-component.component"], function(exports_1) {
+    var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __metadata = (this && this.__metadata) || function (k, v) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+    };
+    var core_1, new_component_component_1;
+    var AppComponent;
+    return {
+        setters:[
+            function (core_1_1) {
+                core_1 = core_1_1;
+            },
+            function (new_component_component_1_1) {
+                new_component_component_1 = new_component_component_1_1;
+            }],
+        execute: function() {
+            AppComponent = (function () {
+                function AppComponent() {
+                }
+                AppComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-app',
+                        template: "\n        <new-component></new-component>\n    ",
+                        directives: [new_component_component_1.NewComponentComponent]
+                    }), 
+                    __metadata('design:paramtypes', [])
+                ], AppComponent);
+                return AppComponent;
+            })();
+            exports_1("AppComponent", AppComponent);
+        }
+    }
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOlsiQXBwQ29tcG9uZW50IiwiQXBwQ29tcG9uZW50LmNvbnN0cnVjdG9yIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFHQTtnQkFBQUE7Z0JBU0FDLENBQUNBO2dCQVRERDtvQkFBQ0EsZ0JBQVNBLENBQUNBO3dCQUNQQSxRQUFRQSxFQUFFQSxRQUFRQTt3QkFDbEJBLFFBQVFBLEVBQUVBLGlEQUVUQTt3QkFDREEsVUFBVUEsRUFBRUEsQ0FBQ0EsK0NBQXFCQSxDQUFDQTtxQkFDdENBLENBQUNBOztpQ0FHREE7Z0JBQURBLG1CQUFDQTtZQUFEQSxDQVRBLEFBU0NBLElBQUE7WUFURCx1Q0FTQyxDQUFBIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSc7XG5pbXBvcnQge05ld0NvbXBvbmVudENvbXBvbmVudH0gZnJvbSBcIi4vbmV3LWNvbXBvbmVudC5jb21wb25lbnRcIjtcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdteS1hcHAnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxuZXctY29tcG9uZW50PjwvbmV3LWNvbXBvbmVudD5cbiAgICBgLFxuICAgIGRpcmVjdGl2ZXM6IFtOZXdDb21wb25lbnRDb21wb25lbnRdXG59KVxuZXhwb3J0IGNsYXNzIEFwcENvbXBvbmVudCB7XG5cbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
