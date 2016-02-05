@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {ChildComponent} from "./child.component";
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     template: `
         <div class="parent">
             <h1>Parent</h1>
