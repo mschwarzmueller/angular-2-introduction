@@ -1,12 +1,12 @@
 import {Component} from 'angular2/core';
-import {NewComponentComponent} from "./new-component.component";
+import {jQueryComponent} from "./jquery.component";
 
 @Component({
     selector: 'my-app',
     template: `
-        <new-component></new-component>
+        <my-jquery></my-jquery>
     `,
-    directives: [NewComponentComponent]
+    directives: [jQueryComponent]
 })
 export class AppComponent {
 
