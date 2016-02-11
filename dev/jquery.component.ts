@@ -6,14 +6,14 @@ declare var jQuery: any;
 @Component({
     selector: 'my-jquery',
     template: `
-        <button>Test jQuery</button>
+        <button>Click me</button>
     `
 })
 export class jQueryComponent implements OnInit {
-    constructor (private _elRef: ElementRef) {}
+    constructor(private _elRef: ElementRef) {}
 
     ngOnInit():any {
-        jQuery(this._elRef.nativeElement).on('click', function() {
+        jQuery(this._elRef.nativeElement).find('button').on('click', function() {
            alert('It works!');
         });
     }
