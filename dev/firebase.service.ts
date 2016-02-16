@@ -10,12 +10,12 @@ export class FirebaseService {
 
     setUser(firstName: string, lastName: string) {
         const body = JSON.stringify({firstName: firstName, lastName: lastName});
-        return this._http.put('https://vivid-heat-6188.firebaseIO.com/user.json', body)
+        return this._http.put('https://vivid-heat-XXX.firebaseIO.com/user.json', body)
             .map(response => response.json());
     }
 
     getUser() {
-        return this._http.get('https://vivid-heat-6188.firebaseIO.com/user.json')
+        return this._http.get('https://vivid-heat-XXX.firebaseIO.com/user.json')
         .map(response => response.json());
     }
 }
